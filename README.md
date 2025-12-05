@@ -10,7 +10,7 @@ Day 2: [https://adventofcode.com/2025/day/2](https://adventofcode.com/2025/day/2
 
 Day 3: [https://adventofcode.com/2025/day/3](https://adventofcode.com/2025/day/3) --> Solution: [Part 1](./day3/main.cpp) & [Part 2](./day3/main2.cpp)
 
-Day 4: [https://adventofcode.com/2025/day/4](https://adventofcode.com/2025/day/4) -/-> Solution: [Part 1](./day4/main.cpp) & [Part 2](./day4/main2.cpp)
+Day 4: [https://adventofcode.com/2025/day/4](https://adventofcode.com/2025/day/4) --> Solution: [Part 1](./day4/main.cpp) & [Part 2](./day4/main2.cpp)
 <!--
 Day 5: [https://adventofcode.com/2025/day/5](https://adventofcode.com/2025/day/3) -/-> Solution: [Part 1](./day3/main.cpp) & [Part 2](./day3/main2.cpp)
 
