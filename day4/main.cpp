@@ -33,7 +33,6 @@ int main(){
 unsigned long long analyzeGrid(const std::vector<std::string> &grid){
     std::vector<std::string> resultGrid = grid;
     unsigned long long sumAccessablePaperRolls = 0;
-    std::cout<< "GRID SIZE: " << grid.size() << " CHARS: " << grid[0].size() <<std::endl;
     for(size_t i = 0; i < grid.size(); ++i){
         for(size_t j = 0; j < grid[i].size(); ++j){
             int adjacentPaperRolls = 0;
@@ -102,12 +101,15 @@ unsigned long long analyzeGrid(const std::vector<std::string> &grid){
             }
 
             if(adjacentPaperRolls < 4){
-                resultGrid[i][j] = 'x';
+                resultGrid[i][j] = '.';
                 ++sumAccessablePaperRolls;
             }
         }
     }
-    printVector(resultGrid);
+    //printVector(resultGrid);
+    if(sumAccessablePaperRolls > 0){
+        sumAccessablePaperRolls += analyzeGrid(resultGrid);
+    }
     return sumAccessablePaperRolls;
 }
 
