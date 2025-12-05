@@ -59,8 +59,12 @@ int main(){
         std::cout<< "Invalid IDs: " << invalidIds << std::endl;
     }
 
+    file.close();
+
     std::cout<< "Total Number of Invalid IDs: " << invalidIds << std::endl;
     std::cout<< "Sum Invalid IDs: " << sumInvalidIds << std::endl;
+
+    return 0;
 }
 
 
