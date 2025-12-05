@@ -22,8 +22,7 @@ int main(){
     }
 
     file.close();
-
-    unsigned long long rollsOfPaper = 0;
+    
     std::cout<< "Free paper rolls: " << analyzeGrid(paperGrid) <<std::endl;
 
     return 0;
@@ -101,15 +100,12 @@ unsigned long long analyzeGrid(const std::vector<std::string> &grid){
             }
 
             if(adjacentPaperRolls < 4){
-                resultGrid[i][j] = '.';
+                resultGrid[i][j] = 'x';
                 ++sumAccessablePaperRolls;
             }
         }
     }
     //printVector(resultGrid);
-    if(sumAccessablePaperRolls > 0){
-        sumAccessablePaperRolls += analyzeGrid(resultGrid);
-    }
     return sumAccessablePaperRolls;
 }
 
